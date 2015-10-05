@@ -52,6 +52,7 @@ run_python:
 	python ./python/kb/query.py
 
 run_java:
+	mvn -f java/pom.xml package
 	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.text.Paraphrase
 	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.text.Disambiguate
 	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.kb.Query
