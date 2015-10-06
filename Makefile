@@ -56,5 +56,7 @@ run_java:
 	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.text.Paraphrase
 	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.text.Disambiguate
 	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.kb.Query
+	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.menu.TaggingMenu
+	mvn -f java/pom.xml exec:java -Dexec.mainClass=com.idilia.services.examples.menu.TaggingMenuAsync
 
 all: run_cpp run_ruby run_python run_java
