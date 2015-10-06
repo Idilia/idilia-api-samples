@@ -18,7 +18,8 @@ public class TaggingMenuAsync {
 
     IdiliaCredentials creds = new IdiliaCredentials(accessKey, privateKey);
 
-    /* Create the disambiguate request with the text to put in the menu.
+    /* 
+     * Create the disambiguate request with the text to put in the menu.
      * The key here is the resultMime expected by the tagging menu API 
      */
     DisambiguateRequest disReq = new DisambiguateRequest();
